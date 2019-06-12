@@ -38,7 +38,15 @@ Based on the preliminary performance of this regressor, we found that the curren
 
 ### Introduction
 
-Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
+Diabetes dataset
+
+Ten baseline variables, age, sex, body mass index, average blood pressure, and six blood serum measurements were obtained for each of n = 442 diabetes patients, as well as the response of interest, a quantitative measure of disease progression one year after baseline. 
+ 
+Note: Each of these 10 feature variables have been mean centered and scaled by the standard deviation times n_samples(i.e. the sum of squares of each column totals 1). 
+
+https://scikit-learn.org/stable/datasets/index.html#diabetes-dataset
+
+According to the initial revision, the information is complete, without null or missing data.   In the same way, I do not see "atypical" data.  It is understood that as a result of these steps the data is ready to start exploration and modeling.
 
 ### Methods
 
@@ -59,6 +67,8 @@ Brief (no more than 1-2 paragraph) description about how you decided to approach
 8      177.0642    161.476    1.097    0.273
 9      751.2793    171.902    4.370    0.000
 10      67.6254     65.984    1.025    0.306
+
+Variables with p-values above 0.05 (relationship to the response variable possibly insignifcant): x1(AGE), x5(TC), x6(LDL), x7(TCH) x8( and x10(just barely), and GLU
 
 ### Results
 
