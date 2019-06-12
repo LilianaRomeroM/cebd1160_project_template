@@ -50,6 +50,8 @@ According to the initial revision, the information is complete, without null or 
 
 ### Methods
 
+
+
 Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
 
 - pseudocode for this method (either created by you or cited from somewhere else)
