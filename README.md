@@ -47,6 +47,19 @@ Brief (no more than 1-2 paragraph) description about how you decided to approach
 - pseudocode for this method (either created by you or cited from somewhere else)
 - why you chose this method
 
+    Coefficient  Std Error  t value  p-value
+0      152.1335      2.576   59.061    0.000
+1      -10.0122     59.749   -0.168    0.867
+2     -239.8191     61.222   -3.917    0.000
+3      519.8398     66.534    7.813    0.000
+4      324.3904     65.422    4.958    0.000
+5     -792.1842    416.684   -1.901    0.058
+6      476.7458    339.035    1.406    0.160
+7      101.0446    212.533    0.475    0.635
+8      177.0642    161.476    1.097    0.273
+9      751.2793    171.902    4.370    0.000
+10      67.6254     65.984    1.025    0.306
+
 ### Results
 
 Brief (2 paragraph) description about your results. Include:
