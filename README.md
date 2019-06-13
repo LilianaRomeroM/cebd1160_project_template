@@ -57,6 +57,9 @@ Brief (no more than 1-2 paragraph) description about how you decided to approach
 - pseudocode for this method (either created by you or cited from somewhere else)
 - why you chose this method
 
+[alternativetext](diabetes7plots/heatmapseaborn.png)
+
+
     Coefficient  Std Error  t value  p-value
 0      152.1335      2.576   59.061    0.000
 1      -10.0122     59.749   -0.168    0.867
