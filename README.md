@@ -27,7 +27,7 @@ We have a dataset containing 442 samples from patients with diabetes, with 10 me
 
 Using this information as a base, we could identify if these factors have relevance in the progression of the disease (if they are predictors), and from there establish mitigation methods on them in an early way.
 
-As a result of the analyses carried out (Ridge and Lasso methods) I find that the model as a whole does not accurately predict the progression of the disease, however it indicates that we should focus our attention on a fundamental factor (body mass index).  
+As a result of the analyses carried out (Lasso method, with add. Ridge) I find that the model as a whole does not accurately predict the progression of the disease, however it indicates that we should focus our attention on a fundamental factor (body mass index).  
 It is also likely that by using a more complex (non-linear) method, a better prediction will be obtained. 
 
 ### Introduction
@@ -50,10 +50,16 @@ According to the initial revision, the information is complete, without null or 
 
 ### Methods
 
+
 Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
 
 - pseudocode for this method (either created by you or cited from somewhere else)
-- why you chose this method
+
+As drivers for defining the method, I took into account a visualization input (Heatmap) and the p-value of each of the independent variables obtained from an initial linear regression.  
+According to both observations, apparently only a handful of variables have a significant influence on the target variable, in this case the progression of diabetes.  
+Therefore, I opted to apply the Lasso model, understanding that it performs "eliminations" of non-significant variables within its process.
+
+Translated with www.DeepL.com/Translator
 
 ![alt text](https://github.com/LilianaRomeroM/cebd1160_project_template/blob/master/diabetes7plots/heatseaborn.png)
 
@@ -71,7 +77,7 @@ Brief (no more than 1-2 paragraph) description about how you decided to approach
 9      751.2793    171.902    4.370    0.000
 10      67.6254     65.984    1.025    0.306
 
-Variables with p-values above 0.05 (relationship to the response variable possibly insignifcant): x1(AGE), x5(TC), x6(LDL), x7(TCH) x8( and x10(just barely), and GLU
+Variables with p-values < 0.05 (relationship to the response variable is signifcant): x2(sex), x3(bmi), x4(bp), x9(ltg)
 
 
 
