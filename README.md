@@ -19,22 +19,16 @@ Your repository should include the following:
 
 ## Research Question
 
-Using the information on the progression of diabetes in patients after one year of diagnosis, can we determine and predict for a new patient diagnosed with this disease, the main factor(s) to control in order to minimize such progression? 
+The objective of this exercise is to determine whether, based on the information of the dataset (physiological characteristics and blood serum measurements), it is possible to predict the diabetes progression one year after a baseline measurement.
 
 ### Abstract
 
-4 sentence longer explanation about your research question. Include:
+We have a dataset containing 442 samples from patients with diabetes, with 10 measurements established one year after the baseline, along with their respective qualitative assessment of disease progression.
 
-Derived from Diffusion-Weighted Magnetic Resonance Imaging (DWI, d-MRI), we have derived "maps" of structural connectivity between brain regions.
-Using these data, we may be able to understand relationships between brain regions and their relative connectivity, which can then be used for targetted interventions in neurodegenerative diseases.
-Here, we tried to predict the connectivity between two unique brain regions based on all other known brain connectivity maps.
-Based on the preliminary performance of this regressor, we found that the current model didn't provide consistent performance, but shows promise for success with more sophisticated methods.
+Using this information as a base, we could identify if these factors have relevance in the progression of the disease (if they are predictors), and from there establish mitigation methods on them in an early way.
 
-
-- opportunity (what data do we have)
-- challenge (what is the "problem" we could solve with this dataset)
-- action (how will we try to solve this problem/answer this question)
-- resolution (what did we end up producing)
+As a result of the analyses carried out (Ridge and Lasso methods) I find that the model as a whole does not accurately predict the progression of the disease, however it indicates that we should focus our attention on a fundamental factor (body mass index).  
+It is also likely that by using a more complex (non-linear) method, a better prediction will be obtained. 
 
 ### Introduction
 
@@ -46,18 +40,22 @@ Note: Each of these 10 feature variables have been mean centered and scaled by t
 
 https://scikit-learn.org/stable/datasets/index.html#diabetes-dataset
 
+According to an additional source, the real 10 variables names are (for the exercise we are keeping the original file descriptions):
+
+age sex bmi map tc ldl hdl tch ltg glu y
+
+https://www4.stat.ncsu.edu/~boos/var.select/diabetes.html
+
 According to the initial revision, the information is complete, without null or missing data.   In the same way, I do not see "atypical" data.  It is understood that as a result of these steps the data is ready to start exploration and modeling.
 
 ### Methods
-
-
 
 Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
 
 - pseudocode for this method (either created by you or cited from somewhere else)
 - why you chose this method
 
-[alternativetext](diabetes7plots/heatmapseaborn.png)
+
 
 
     Coefficient  Std Error  t value  p-value
@@ -74,6 +72,9 @@ Brief (no more than 1-2 paragraph) description about how you decided to approach
 10      67.6254     65.984    1.025    0.306
 
 Variables with p-values above 0.05 (relationship to the response variable possibly insignifcant): x1(AGE), x5(TC), x6(LDL), x7(TCH) x8( and x10(just barely), and GLU
+
+
+
 
 ### Results
 
