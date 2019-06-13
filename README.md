@@ -55,7 +55,7 @@ Brief (no more than 1-2 paragraph) description about how you decided to approach
 - pseudocode for this method (either created by you or cited from somewhere else)
 - why you chose this method
 
-
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 
     Coefficient  Std Error  t value  p-value
