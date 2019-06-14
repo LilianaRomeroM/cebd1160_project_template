@@ -27,7 +27,7 @@ We have a dataset containing 442 samples from patients with diabetes, with 10 me
 
 Using this information as a base, we could identify if these factors have relevance in the progression of the disease (if they are predictors), and from there establish mitigation methods on them in an early way.
 
-As a result of the analyses carried out (Lasso method, with add. Ridge) I find that the model as a whole does not accurately predict the progression of the disease, however it indicates that we should focus our attention on a fundamental factor (body mass index).  
+As a result of the analyses carried out (Lasso method) I find that the model as a whole does not accurately predict the progression of the disease, however it indicates that we should focus our attention on a fundamental factor (body mass index).  
 It is also likely that by using a more complex (non-linear) method, a better prediction will be obtained. 
 
 ### Introduction
@@ -120,17 +120,35 @@ Brief (2 paragraph) description about your results. Include:
 
 ![alt text](https://github.com/LilianaRomeroM/cebd1160_project_template/blob/master/EXPERPLOTS/lassores.png)
 
-- At least 1 figure
-- At least 1 "value" that summarizes either your data or the "performance" of your method
-- A short explanation of both of the above
+Under the same test, the performance is:
+
+LINEAR REGRESSION
+Printing MSE error: 2973.0061322166034
+
+RIDGE CROSS-VALIDATION
+alpha 0.0466301673441609 (in all cases low value, high bias, close to LR)
+MSE RIDGECROSSVAL 2864.841165528976
+
+LASSO CROSS-VALIDATION (6 var)
+MSE 2994.9584054969678
+
+In general the Ridge model generates an improvement although not very significant versus the linear regression.
+
+However, since our initial exploration of data indicates that few variables have relevance to the target variable, in essence the Lasso method is able to deliver a more adequate/realistic result.
+
+In order to perform a lateral validation, I separately developed a short subset exercise, observing that the reliability of the model "jumps" notoriously only with the passage from one variable (bmi) to 2(bmi-s5); this would indicate me that even finishing and assigning a subset, we would be approximating the same scenarios described above.
+
+![alt text]
 
 ### Discussion
-Brief (no more than 1-2 paragraph) description about what you did. Include:
 
-- interpretation of whether your method "solved" the problem
-- suggested next step that could make it better.
+I consider that the revised methods (especially Lasso) do not provide a reliable or statistically acceptable result.
+
+In spite of this, I think that the Dataset does have valuable predictive information that can be explored through more elaborate, probably non-linear methods.
+
+Another alternative study could focus on the body mass index, where surely there will be a better reading on the target variable, and only by initial observations, I believe that this same factor could be predictive with respect to the other variables that show to be significant in the model.
 
 ### References
-All of the links
+Already included in previous sections of the document.
 
 -------
