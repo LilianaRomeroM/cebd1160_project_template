@@ -59,18 +59,40 @@ Therefore, I opted to apply the Lasso model, understanding that it performs "eli
 ![alt text](https://github.com/LilianaRomeroM/cebd1160_project_template/blob/master/diabetes7plots/heatseaborn.png)
 
 
-    Coefficient  Std Error  t value  p-value
-0      152.1335      2.576   59.061    0.000
-1      -10.0122     59.749   -0.168    0.867
-2     -239.8191     61.222   -3.917    0.000
-3      519.8398     66.534    7.813    0.000
-4      324.3904     65.422    4.958    0.000
-5     -792.1842    416.684   -1.901    0.058
-6      476.7458    339.035    1.406    0.160
-7      101.0446    212.533    0.475    0.635
-8      177.0642    161.476    1.097    0.273
-9      751.2793    171.902    4.370    0.000
-10      67.6254     65.984    1.025    0.306
+OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.518
+Model:                            OLS   Adj. R-squared:                  0.507
+Method:                 Least Squares   F-statistic:                     46.27
+Date:                Fri, 14 Jun 2019   Prob (F-statistic):           3.83e-62
+Time:                        09:49:00   Log-Likelihood:                -2386.0
+No. Observations:                 442   AIC:                             4794.
+Df Residuals:                     431   BIC:                             4839.
+Df Model:                          10                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        152.1335      2.576     59.061      0.000     147.071     157.196
+x1           -10.0122     59.749     -0.168      0.867    -127.448     107.424
+x2          -239.8191     61.222     -3.917      0.000    -360.151    -119.488
+x3           519.8398     66.534      7.813      0.000     389.069     650.610
+x4           324.3904     65.422      4.958      0.000     195.805     452.976
+x5          -792.1842    416.684     -1.901      0.058   -1611.169      26.801
+x6           476.7458    339.035      1.406      0.160    -189.621    1143.113
+x7           101.0446    212.533      0.475      0.635    -316.685     518.774
+x8           177.0642    161.476      1.097      0.273    -140.313     494.442
+x9           751.2793    171.902      4.370      0.000     413.409    1089.150
+x10           67.6254     65.984      1.025      0.306     -62.065     197.316
+==============================================================================
+Omnibus:                        1.506   Durbin-Watson:                   2.029
+Prob(Omnibus):                  0.471   Jarque-Bera (JB):                1.404
+Skew:                           0.017   Prob(JB):                        0.496
+Kurtosis:                       2.726   Cond. No.                         227.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
 Variables with p-values < 0.05 (relationship to the response variable is signifcant): x2(sex), x3(bmi), x4(bp), x9(ltg)
 
