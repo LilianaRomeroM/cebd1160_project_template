@@ -146,7 +146,7 @@ I consider that the revised methods (especially Lasso) do not provide a reliable
 
 In spite of this, I think that the Dataset does have valuable predictive information that can be explored through more elaborate, probably non-linear methods.
 
-Another alternative study could focus on the body mass index, where surely there will be a better reading on the target variable, and only by initial observations, I believe that this same factor could be predictive with respect to the other variables that show to be significant in the model.
+Another alternative study could focus on the body mass index, where surely there will be a better reading on the target variable, and only by initial observations, I believe that this same factor could be predictive with respect to other relevant variables (i.e. bp or s5)
 
 ### References
 Already included in previous sections of the document.
