@@ -137,22 +137,18 @@ Source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4516242/
 
 ### Results
 
-Brief (2 paragraph) description about your results. Include:
-
-
 ![alt text](https://github.com/LilianaRomeroM/cebd1160_project_template/blob/master/EXPERPLOTS/lassores.png)
 
 Under the same test, the performance is:
 
 LINEAR REGRESSION
-Printing MSE error: 2973.0061322166034
+MSE: 2973.0061322166034
 
-RIDGE CROSS-VALIDATION
-alpha 0.0466301673441609 (in all cases low value, high bias, close to LR)
-MSE RIDGECROSSVAL 2864.841165528976
+RIDGE CROSS-VALIDATION alpha 0.0466301673441609 (in all cases low value, high bias, close to LR)
+MSE: 2864.841165528976
 
 LASSO CROSS-VALIDATION (6 var)
-MSE 2994.9584054969678
+MSE: 2994.9584054969678
 
 In general the Ridge model generates an improvement although not very significant versus the linear regression.
 
