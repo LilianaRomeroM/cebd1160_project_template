@@ -50,16 +50,11 @@ According to the initial revision, the information is complete, without null or 
 
 ### Methods
 
-
-Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
-
-- pseudocode for this method (either created by you or cited from somewhere else)
-
 As drivers for defining the method, I took into account a visualization input (Heatmap) and the p-value of each of the independent variables obtained from an initial linear regression.  
-According to both observations, apparently only a handful of variables have a significant influence on the target variable, in this case the progression of diabetes.  
-Therefore, I opted to apply the Lasso model, understanding that it performs "eliminations" of non-significant variables within its process.
 
-Translated with www.DeepL.com/Translator
+According to both observations, apparently only a handful of variables have a significant influence on the target variable, in this case the progression of diabetes.  
+
+Therefore, I opted to apply the Lasso model, understanding that it performs "eliminations" of non-significant variables within its process.
 
 ![alt text](https://github.com/LilianaRomeroM/cebd1160_project_template/blob/master/diabetes7plots/heatseaborn.png)
 
@@ -80,7 +75,43 @@ Translated with www.DeepL.com/Translator
 Variables with p-values < 0.05 (relationship to the response variable is signifcant): x2(sex), x3(bmi), x4(bp), x9(ltg)
 
 
+The pseudocode for the Lasso (with cross-validation) method is:
 
+Input:
+
+(X, Y): training set that contains n samples and a p-dimensional vector of predictors, and (X,Y)∈Rn×(p×1).
+
+λ 1: tuning parameter in the LASSO penalty.
+
+γ: parameter for computing the weight vector w in the adaptive LASSO penalty.
+
+λ 2: tuning parameter in the adaptive LASSO penalty.
+
+Output: optimal variable subset S.
+
+/Stage 1:/
+
+1: Compute the LASSO estimates
+
+βˆ(λ1)=argminβ∑i=1n(−yi(xTiβ)+log(1+exTiβ))+λ1∑j=1p|βj|
+2: Compute the non-zero coefficients set J1={j,βˆj≠0} in the LASSO regression
+
+3: Compute the zero coefficients set J∗1={j,βˆj=0} in the LASSO regression
+
+/Stage 2: /
+
+4: Compute the weight vector w=1/|βˆ(J1)|γ of the adaptive LASSO penalty
+
+5: Set βˆ(J∗1)=0 in the adaptive LASSO regression
+
+6: Compute the adaptive LASSO estimates
+
+βˆ(λ2)=argminβ∑i=1n(−yi(xTiβ)+log(1+exTiβ))+λ2∑j=1pwˆj|βj|
+7: Compute the non-zero coefficients J2={j,βˆj≠0} in the adaptive LASSO regression
+
+8: Generate the optimal variable subset S = X(J 2)
+
+Source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4516242/ 
 
 ### Results
 
