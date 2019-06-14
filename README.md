@@ -138,7 +138,7 @@ However, since our initial exploration of data indicates that few variables have
 
 In order to perform a lateral validation, I separately developed a short subset exercise, observing that the reliability of the model "jumps" notoriously only with the passage from one variable (bmi) to 2(bmi-s5); this would indicate me that even finishing and assigning a subset, we would be approximating the same scenarios described above.
 
-![alt text]
+![alt text](https://github.com/LilianaRomeroM/cebd1160_project_template/blob/master/SUBSETS/graph.png)
 
 ### Discussion
 
