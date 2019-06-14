@@ -3,7 +3,7 @@ Instructions and template for final projects.
 
 | Name | Date |
 |:-------|:---------------|
-|Liliana Romero Molina | Completion date|
+|Liliana Romero Molina | 2019-06-15|
 
 -----
 
