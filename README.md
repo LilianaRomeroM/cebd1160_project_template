@@ -117,6 +117,9 @@ Source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4516242/
 
 Brief (2 paragraph) description about your results. Include:
 
+
+![alt text](https://github.com/LilianaRomeroM/cebd1160_project_template/blob/master/EXPERPLOTS/lassores.png)
+
 - At least 1 figure
 - At least 1 "value" that summarizes either your data or the "performance" of your method
 - A short explanation of both of the above
