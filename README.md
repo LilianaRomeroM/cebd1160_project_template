@@ -94,7 +94,24 @@ Kurtosis:                       2.726   Cond. No.                         227.
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
+“In the ideal world, we would be able to define a "perfectly" random sample, the most appropriate test and one definitive conclusion. We simply cannot. What we can do is try to optimise all stages of our research to minimise sources of uncertainty. When presenting P values some groups find it helpful to use the asterisk rating system as well as quoting the P value:
+P < 0.05 *
+P < 0.01 **
+P < 0.001
+ 
+Most authors refer to statistically significant as P < 0.05 and statistically highly significant as P < 0.001 (less than one in a thousand chance of being wrong).”
+https://www.statsdirect.com/help/basics/p_values.htm
+
+
 Variables with p-values < 0.05 (relationship to the response variable is signifcant): x2(sex), x3(bmi), x4(bp), x9(ltg)
+
+LASSO CV
+Lasso linear model with iterative fitting along a regularization path.
+The best model is selected by cross-validation.
+The optimization objective for Lasso is:
+(1 / (2 * n_samples)) * ||y - Xw||^2_2 + alpha * ||w||_1
+
+Source: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html
 
 
 The pseudocode for the Lasso (with cross-validation) method is:
