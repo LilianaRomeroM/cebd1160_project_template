@@ -3,14 +3,14 @@ Instructions and template for final projects.
 
 | Name | Date |
 |:-------|:---------------|
-|Liliana Romero Molina | 2019-06-15|
+|Liliana Romero Molina | 2019-06-16|
 
 -----
 
 ### Resources
 Your repository should include the following:
 
-- Python script for your analysis
+- Python script for your analysis: only the main Python file is included in the Docker file; the additionals (subsets and plots) are out of it, but included in the repository. 
 - Results figure/saved file
 - Dockerfile for your experiment
 - runtime-instructions in a file named RUNME.md
