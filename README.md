@@ -167,6 +167,8 @@ MSE: 2864.841165528976
 LASSO CROSS-VALIDATION (6 var)
 MSE: 2994.9584054969678
 
+Scores <.55 for all cases
+
 In general the Ridge model generates an improvement although not very significant versus the linear regression.
 
 However, since our initial exploration of data indicates that few variables have relevance to the target variable, in essence the Lasso method is able to deliver a more adequate/realistic result.
