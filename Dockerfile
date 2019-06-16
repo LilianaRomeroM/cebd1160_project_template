@@ -7,7 +7,6 @@ RUN apt update && \
                    python3-pip && \
     pip3 install -r requirements.txt
 
-COPY app.py ./
+COPY DIABETES_EXPERIMENT.py ./
 
-EXPOSE 80
-CMD ["gunicorn", "-b", "0.0.0.0:80", "app:server",  "--workers", "4"]
+CMD ["python3", "-u",  "DIABETES_EXPERIMENT.py"]
